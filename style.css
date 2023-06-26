@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://source.unsplash.com/1600x900/?landscape");
+  background-size: cover;
+}
+
+.container {
+  min-height: 80%;
+  min-width: 40%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+h1 {
+  padding-bottom: 30px;
+}
+
+.choices {
+  padding-bottom: 30px;
+}
+
+.choices>button {
+  font-size: 60px;
+  margin: 20px;
+  padding: 10px;
+  width: 90px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.choices>button:hover {
+  opacity: 50%;
+}
+
+.rock {
+  background-color: #808080;
+}
+
+.paper {
+  background-color: rgb(2, 180, 2);
+}
+
+.scissors {
+  background-color: rgb(209, 28, 22);
+}
+
+.score {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.my-score {
+  color: #0000ff;
+}
+
+.machine-score {
+  color: #ff0000;
+}
+
+.draw {
+  color: #ffff00;
+}
+
+@media (max-width:590px) {
+  .container {
+    padding: 20px;
+    width: 400px;
+  }
+
+  .choices>button {
+    font-size: 40px;
+    margin: 5px;
+
+  }
+}

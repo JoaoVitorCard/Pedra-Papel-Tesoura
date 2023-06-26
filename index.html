@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./assets/fav-icon.png" type="image/x-icon">
+  <title>Jokenpô</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Jokenpô</h1>
+
+    <div class="choices">
+      <button class="rock" id="rock" onclick="rockChoice()">&#x1F44A</button>
+      <button class="paper" id="paper" onclick="paperChoice()">&#x1F590</button>
+      <button class="scissors" id="scissors" onclick="scissorsChoice()">&#x270C</button>
+    </div>
+
+    <div class="score">
+      <p>Sua pontuação: <span class="my-score" id="my-score">0</span></p>
+      <p>Pontuação da máquina: <span class="machine-score" id="machine-score">0</span></p>
+      <p>Empate: <span class="draw" id="draw">0</span></p>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
