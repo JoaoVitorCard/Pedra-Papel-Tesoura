@@ -99,6 +99,4 @@ const scissorsChoice = () => {
     personalScore++
     myScore.innerHTML = personalScore
   }
-  console.log(choiceNumber)
 }
-
